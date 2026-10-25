@@ -3,50 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Strandmark Gruppen – Bygg, mark, teknik och fastighetsservice</title>
-  <meta name="description" content="Strandmark Gruppen utvecklar, bygger och förvaltar miljöer som håller över tid – i hela Sverige.">
+  <title>Strandmark Gruppen – Bygg, mark, el och fastighetsservice</title>
+  <meta name="description" content="Fyra bolag inom bygg, mark, el och fastighetsservice. 180 anställda, 340 genomförda projekt sedan 2011.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- SVG-ikoner -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z" fill="currentColor"/></symbol>
-  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V6a1 1 0 011-1zm9 7.2L4 7v.3l8 5.2 8-5.2V7z" fill="currentColor"/></symbol>
-  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z" fill="currentColor"/></symbol>
-  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2l3 6.9 7.5.7-5.7 5 1.7 7.4L12 18.2 5.5 22l1.7-7.4-5.7-5 7.5-.7z" fill="currentColor"/></symbol>
-  <symbol id="i-hex" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M12 3l3 2v4l-3 2-3-2V5z"/><path d="M7.5 11l3 2v4l-3 2-3-2v-4z"/><path d="M16.5 11l3 2v4l-3 2-3-2v-4z"/></g></symbol>
-  <symbol id="i-mount" viewBox="0 0 24 24"><path d="M2 19L9 7l4 6 2-3 7 9z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
-  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
-  <symbol id="i-gear" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/><circle cx="12" cy="12" r="6.5"/></g></symbol>
-  <symbol id="i-hands" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 11l4-4 4 2 3-2 5 1 4 3"/><path d="M6 7v6l5 5 2-1 2 1 3-3"/><path d="M10 13l3 3M12 11l3 3"/></g></symbol>
-  <symbol id="i-award" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><circle cx="12" cy="9" r="3"/><path d="M8.5 14l-1.5 8 5-3 5 3-1.5-8"/></g></symbol>
-  <symbol id="i-leaf" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 19C5 9 11 4 20 4c0 9-5 15-15 15z"/><path d="M5 19l8-8"/></g></symbol>
-  <symbol id="i-team" viewBox="0 0 24 24"><g fill="currentColor"><circle cx="12" cy="7" r="3"/><circle cx="5" cy="9" r="2.2"/><circle cx="19" cy="9" r="2.2"/><path d="M6 20c0-3.6 2.7-6 6-6s6 2.4 6 6zM1 19c0-2.6 1.6-4.4 4-4.4 1 0 1.8.3 2.4.8A7.6 7.6 0 005 19zM23 19c0-2.6-1.6-4.4-4-4.4-1 0-1.8.3-2.4.8A7.6 7.6 0 0119 19z"/></g></symbol>
-  <symbol id="i-bars" viewBox="0 0 24 24"><g fill="currentColor"><rect x="3" y="12" width="4.5" height="9" rx=".5"/><rect x="9.75" y="7" width="4.5" height="14" rx=".5"/><rect x="16.5" y="3" width="4.5" height="18" rx=".5"/></g></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
   <symbol id="logo" viewBox="0 0 40 32"><path d="M2 14L20 4l18 10-18 6z" fill="#c9a874"/><path d="M2 20l18-6 18 6-18 8z" fill="#8f7046"/><path d="M2 14l18 6v8L2 20z" fill="#a8875a"/></symbol>
 </svg>
 
-<!-- Toppbar -->
 <div class="topbar">
   <div class="container topbar__inner">
     <div class="topbar__left">
-      <a href="tel:010123456"><svg><use href="#i-phone"/></svg>010-123 45 67</a>
-      <a href="mailto:info@strandmarkgruppen.se"><svg><use href="#i-mail"/></svg>info@strandmarkgruppen.se</a>
-      <span><svg><use href="#i-pin"/></svg>Verksamma i hela Sverige</span>
+      <a href="tel:010123456">010-123 45 67</a>
+      <a href="mailto:info@strandmarkgruppen.se">info@strandmarkgruppen.se</a>
     </div>
     <div class="topbar__right">
-      <a href="#">Karriär</a><a href="#">Press</a><a href="#">In English</a>
+      <a href="#">Lediga jobb</a><a href="#">Press</a><a href="#">English</a>
     </div>
   </div>
 </div>
 
-<!-- Header -->
 <header class="header">
   <div class="container header__inner">
     <a href="#" class="brand">
@@ -54,246 +37,183 @@
       <span class="brand__text"><b>STRANDMARK</b><small>GRUPPEN</small></span>
     </a>
     <nav class="nav">
-      <a href="#">Om oss <svg><use href="#i-chev"/></svg></a>
-      <a href="#bolag">Våra bolag <svg><use href="#i-chev"/></svg></a>
+      <a href="#om">Om oss</a>
+      <a href="#bolag">Bolagen</a>
       <a href="#projekt">Projekt</a>
-      <a href="#">Hållbarhet</a>
-      <a href="#">Karriär</a>
+      <a href="#">Miljö</a>
+      <a href="#">Jobba hos oss</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
-    <a href="#kontakt" class="btn btn--gold btn--sm">Begär offert <svg><use href="#i-arrow"/></svg></a>
+    <a href="#kontakt" class="btn btn--dark btn--sm">Begär offert</a>
   </div>
 </header>
 
-<!-- Hero -->
 <section class="hero">
   <div class="hero__content">
-    <span class="rule"></span>
-    <p class="eyebrow">Hållbart byggande i hela Sverige</p>
-    <h1>Vi utvecklar, bygger och förvaltar miljöer som håller över tid</h1>
-    <p class="lead">Strandmark Gruppen samlar spetskompetens inom bygg, mark, teknik och fastighetsservice. Vi driver projekt med kvalitet, ansvar och långsiktigt värde i fokus.</p>
+    <h1>Vi bygger skolor, kontor och bostäder – och tar hand om dem efteråt.</h1>
+    <p class="lead">Strandmark Gruppen är fyra bolag inom bygg, mark, el och fastighetsservice. Ni har en projektledare från första möte till slutbesiktning, och egna yrkesarbetare på plats.</p>
     <div class="btn-row">
       <a href="#kontakt" class="btn btn--gold">Begär offert <svg><use href="#i-arrow"/></svg></a>
-      <a href="#projekt" class="btn btn--outline">Se våra projekt</a>
+      <a href="#projekt" class="btn btn--outline">Se projekt</a>
     </div>
   </div>
-  <div class="hero__media">
-    <img src="https://images.pexels.com/photos/4626268/pexels-photo-4626268.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Modern villa i sten och glas i skymning">
-    <div class="hero__badge">
-      <span class="hero__badge-icon"><svg><use href="#i-bars"/></svg></span>
-      <div><b>340+ projekt</b><small>Sedan 2011</small></div>
-    </div>
+  <figure class="hero__media">
+    <img src="https://images.pexels.com/photos/4626268/pexels-photo-4626268.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Villa i tegel och glas byggd i sluttning, fotograferad i skymning">
+    <figcaption>Villa Bergsluttningen, Nacka · färdig 2023</figcaption>
+  </figure>
+</section>
+
+<section class="facts">
+  <div class="container facts__inner">
+    <div><b>2011</b><span>startade i Västerås med åtta anställda</span></div>
+    <div><b>340</b><span>genomförda projekt</span></div>
+    <div><b>180</b><span>anställda, varav 120 hantverkare</span></div>
+    <div><b>9</b><span>kontor från Malmö till Umeå</span></div>
   </div>
 </section>
 
-<!-- Bolag -->
 <section class="section" id="bolag">
   <div class="container">
     <div class="section-head">
-      <h2 class="h-line">Våra bolag och affärsområden</h2>
-      <a href="#" class="link">Se alla våra bolag <svg><use href="#i-arrow"/></svg></a>
+      <h2>Fyra bolag</h2>
+      <p class="section-head__note">Ni kan anlita ett bolag för en enskild del eller alla fyra i samma avtal.</p>
     </div>
     <div class="grid-4">
-      <article class="card">
-        <div class="card__img"><img src="https://images.pexels.com/photos/16151264/pexels-photo-16151264.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Byggarbetare i varselväst"></div>
-        <span class="card__icon"><svg><use href="#i-hex"/></svg></span>
-        <div class="card__body">
-          <h3>Byggentreprenad</h3>
-          <p>Nyproduktion, ombyggnad och totalentreprenad för kommersiella och offentliga miljöer.</p>
-          <a href="#" class="circle-btn" aria-label="Läs mer"><svg><use href="#i-arrow"/></svg></a>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card__img"><img src="https://images.pexels.com/photos/27986719/pexels-photo-27986719.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Grävmaskin på byggarbetsplats"></div>
-        <span class="card__icon"><svg><use href="#i-mount"/></svg></span>
-        <div class="card__body">
-          <h3>Mark &amp; anläggning</h3>
-          <p>Schakt, grund, infrastruktur och utemiljö med hög kapacitet och precision.</p>
-          <a href="#" class="circle-btn" aria-label="Läs mer"><svg><use href="#i-arrow"/></svg></a>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card__img"><img src="https://images.pexels.com/photos/17842832/pexels-photo-17842832.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Elektriker vid elcentral"></div>
-        <span class="card__icon"><svg><use href="#i-bolt"/></svg></span>
-        <div class="card__body">
-          <h3>El &amp; teknik</h3>
-          <p>Elinstallationer, energi, laddinfrastruktur och smart teknik för moderna fastigheter.</p>
-          <a href="#" class="circle-btn" aria-label="Läs mer"><svg><use href="#i-arrow"/></svg></a>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card__img"><img src="https://images.pexels.com/photos/17166706/pexels-photo-17166706.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Modern fasad"></div>
-        <span class="card__icon"><svg><use href="#i-gear"/></svg></span>
-        <div class="card__body">
-          <h3>Fastighet &amp; service</h3>
-          <p>Löpande underhåll, driftstöd och service som säkrar funktion över tid.</p>
-          <a href="#" class="circle-btn" aria-label="Läs mer"><svg><use href="#i-arrow"/></svg></a>
-        </div>
-      </article>
+      <a href="#" class="unit">
+        <img src="https://images.pexels.com/photos/16151264/pexels-photo-16151264.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Byggarbetare monterar armering">
+        <h3>Strandmark Bygg</h3>
+        <p>Nyproduktion och ombyggnad, oftast som totalentreprenad. Skolor, kontor, flerbostadshus.</p>
+        <span class="unit__link">Läs mer <svg><use href="#i-arrow"/></svg></span>
+      </a>
+      <a href="#" class="unit">
+        <img src="https://images.pexels.com/photos/27986719/pexels-photo-27986719.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Grävmaskin vid grushög">
+        <h3>Strandmark Mark</h3>
+        <p>Schakt, grundläggning, VA och utemiljö. Egen maskinpark med 40 maskiner.</p>
+        <span class="unit__link">Läs mer <svg><use href="#i-arrow"/></svg></span>
+      </a>
+      <a href="#" class="unit">
+        <img src="https://images.pexels.com/photos/17842832/pexels-photo-17842832.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Elektriker arbetar i ett elskåp">
+        <h3>Strandmark El</h3>
+        <p>Elinstallation, solceller och laddplatser. Auktoriserade enligt Elsäkerhetsverket.</p>
+        <span class="unit__link">Läs mer <svg><use href="#i-arrow"/></svg></span>
+      </a>
+      <a href="#" class="unit">
+        <img src="https://images.pexels.com/photos/17166706/pexels-photo-17166706.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Fasad på flerbostadshus">
+        <h3>Strandmark Fastighet</h3>
+        <p>Drift, felanmälan och planerat underhåll för omkring 600 000 m² lokaler och bostäder.</p>
+        <span class="unit__link">Läs mer <svg><use href="#i-arrow"/></svg></span>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- Statistik -->
-<section class="stats">
-  <div class="container stats__inner">
-    <div class="stat"><b>2011</b><span>Grundat</span></div>
-    <div class="stat"><b>340+</b><span>Projekt</span></div>
-    <div class="stat"><b>180</b><span>Medarbetare</span></div>
-    <div class="stat"><b>Hela Sverige</b><span>Nationell närvaro</span></div>
-  </div>
-</section>
-
-<!-- Om koncernen -->
-<section class="section about">
-  <div class="container about__inner">
-    <div class="about__media">
-      <img src="https://images.pexels.com/photos/8961030/pexels-photo-8961030.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Två projektledare i skyddshjälmar på byggarbetsplats">
-      <blockquote class="about__quote">”Vi bygger morgondagens Sverige – idag.”</blockquote>
-    </div>
+<section class="section section--alt" id="om">
+  <div class="container about">
+    <img class="about__img" src="https://images.pexels.com/photos/8961030/pexels-photo-8961030.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Två arbetsledare går igenom ritningar på en byggarbetsplats">
     <div class="about__text">
-      <span class="rule"></span>
-      <p class="eyebrow">Om koncernen</p>
-      <h2 class="h-xl">En koncernpartner genom hela kedjan</h2>
-      <p class="lead">Vi kombinerar lokal närvaro med bred specialistkompetens. Genom våra bolag kan vi ta ansvar från tidig planering till färdig leverans och långsiktig förvaltning.</p>
-      <div class="features">
-        <div class="feature"><span class="feature__icon"><svg><use href="#i-hands"/></svg></span><div><b>Tydligt ansvar</b><small>En kontakt genom hela projektet.</small></div></div>
-        <div class="feature"><span class="feature__icon"><svg><use href="#i-award"/></svg></span><div><b>Hög kvalitet</b><small>Vi kompromissar inte.</small></div></div>
-        <div class="feature"><span class="feature__icon"><svg><use href="#i-leaf"/></svg></span><div><b>Hållbara lösningar</b><small>För människor, miljö och samhälle.</small></div></div>
-        <div class="feature"><span class="feature__icon"><svg><use href="#i-team"/></svg></span><div><b>Ett team – flera discipliner</b><small>Bred kompetens under samma tak.</small></div></div>
-      </div>
+      <h2>Varför fyra bolag?</h2>
+      <p>Vi började som ett rent byggföretag. Men kunderna fick själva samordna mark, el och förvaltning, och det var där tidplanerna sprack. Så vi startade de delarna själva, ett bolag i taget.</p>
+      <p>I dag betyder det färre överlämningar. Markgänget vet när elen ska in, och den som sköter fastigheten efteråt har varit med vid slutbesiktningen.</p>
+      <ul class="checklist">
+        <li><b>En projektledare</b> som är er kontakt hela vägen.</li>
+        <li><b>Egen personal</b> i stället för långa kedjor av underentreprenörer.</li>
+        <li><b>Fast pris</b> på de flesta totalentreprenader.</li>
+        <li><b>Miljöcertifierat</b> enligt ISO 14001. Vi bygger gärna enligt Miljöbyggnad eller Svanen.</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- Projekt -->
-<section class="section section--tight" id="projekt">
+<section class="section" id="projekt">
   <div class="container">
     <div class="section-head">
-      <h2 class="h-line">Utvalda projekt</h2>
-      <a href="#" class="link">Se alla projekt <svg><use href="#i-arrow"/></svg></a>
+      <h2>Senaste projekt</h2>
+      <a href="#" class="link">Alla 340 projekt <svg><use href="#i-arrow"/></svg></a>
     </div>
-    <div class="grid-2">
+    <div class="projects">
       <article class="project">
-        <img src="https://images.pexels.com/photos/17644158/pexels-photo-17644158.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Bostadskvarter vid vatten">
-        <div class="project__body">
-          <span class="tag">Bostäder</span>
-          <h3>Kajkanten 8</h3>
-          <p class="loc"><svg><use href="#i-pin"/></svg>Stockholm</p>
-          <p>Ett modernt bostadskvarter med fokus på trä, tegel och energieffektiva lösningar.</p>
-          <a href="#" class="circle-btn" aria-label="Läs mer"><svg><use href="#i-arrow"/></svg></a>
-        </div>
+        <img src="https://images.pexels.com/photos/17644158/pexels-photo-17644158.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Gröna flerbostadshus vid vatten">
+        <div class="project__meta"><span>Bostäder</span><span>Stockholm</span></div>
+        <h3>Kajkanten 8</h3>
+        <p>64 hyresrätter i tre huskroppar med stomme i KL-trä. Vi gjorde mark, bygg och el.</p>
+        <dl><div><dt>Yta</dt><dd>5 200 m²</dd></div><div><dt>Klart</dt><dd>2024</dd></div><div><dt>Entreprenad</dt><dd>Total</dd></div></dl>
       </article>
       <article class="project">
-        <img src="https://images.pexels.com/photos/12069485/pexels-photo-12069485.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Logistikanläggning">
-        <div class="project__body">
-          <span class="tag">Logistik</span>
-          <h3>Logistikcenter Norr</h3>
-          <p class="loc"><svg><use href="#i-pin"/></svg>Umeå</p>
-          <p>Ny logistikanläggning med fokus på flöde, hållbar drift och robust teknik.</p>
-          <a href="#" class="circle-btn" aria-label="Läs mer"><svg><use href="#i-arrow"/></svg></a>
-        </div>
+        <img src="https://images.pexels.com/photos/12069485/pexels-photo-12069485.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Lagerbyggnad med lastportar">
+        <div class="project__meta"><span>Logistik</span><span>Umeå</span></div>
+        <h3>Logistikcenter Norr</h3>
+        <p>Lager med 14 lastportar och kylzon. Uppvärmt med bergvärme, solceller på hela taket.</p>
+        <dl><div><dt>Yta</dt><dd>18 000 m²</dd></div><div><dt>Klart</dt><dd>2023</dd></div><div><dt>Entreprenad</dt><dd>Total</dd></div></dl>
       </article>
       <article class="project">
-        <img src="https://images.pexels.com/photos/17144608/pexels-photo-17144608.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Skolbyggnad med innergård">
-        <div class="project__body">
-          <span class="tag">Samhällsfastighet</span>
-          <h3>Campus Västra</h3>
-          <p class="loc"><svg><use href="#i-pin"/></svg>Västerås</p>
-          <p>Utbildningsmiljö i flera etapper där bygg, mark och teknik samordnats i samma leverans.</p>
-          <a href="#" class="circle-btn" aria-label="Läs mer"><svg><use href="#i-arrow"/></svg></a>
-        </div>
+        <img src="https://images.pexels.com/photos/17144608/pexels-photo-17144608.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Skolbyggnad med skolgård">
+        <div class="project__meta"><span>Skola</span><span>Västerås</span></div>
+        <h3>Campus Västra</h3>
+        <p>F–9-skola för 750 elever, byggd i tre etapper medan undervisningen pågick.</p>
+        <dl><div><dt>Yta</dt><dd>11 400 m²</dd></div><div><dt>Klart</dt><dd>2022</dd></div><div><dt>Entreprenad</dt><dd>Utförande</dd></div></dl>
       </article>
       <article class="project">
-        <img src="https://images.pexels.com/photos/18267934/pexels-photo-18267934.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Modern kontorsbyggnad i glas">
-        <div class="project__body">
-          <span class="tag">Kontor</span>
-          <h3>Kontorshuset Skeppet</h3>
-          <p class="loc"><svg><use href="#i-pin"/></svg>Göteborg</p>
-          <p>Kontor med hög materialkvalitet, flexibel planlösning och låg energianvändning.</p>
-          <a href="#" class="circle-btn" aria-label="Läs mer"><svg><use href="#i-arrow"/></svg></a>
-        </div>
+        <img src="https://images.pexels.com/photos/18267934/pexels-photo-18267934.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Kontorshus med glasfasad">
+        <div class="project__meta"><span>Kontor</span><span>Göteborg</span></div>
+        <h3>Kontorshuset Skeppet</h3>
+        <p>Ombyggnad av 1970-talskontor. Ny fasad, ventilation och el. Energianvändningen sjönk med 45 %.</p>
+        <dl><div><dt>Yta</dt><dd>7 800 m²</dd></div><div><dt>Klart</dt><dd>2024</dd></div><div><dt>Entreprenad</dt><dd>Total</dd></div></dl>
       </article>
     </div>
   </div>
 </section>
 
-<!-- Process -->
-<section class="section section--tight">
+<section class="section section--alt">
   <div class="container">
     <div class="section-head">
-      <h2 class="h-line">Så arbetar vi</h2>
-      <span class="muted-sm">Från idé till långsiktig förvaltning</span>
+      <h2>Så går ett projekt till</h2>
     </div>
     <ol class="steps">
-      <li><span class="step__num">01</span><h3>Analys</h3><p>Vi sätter oss in i era behov, förutsättningar och mål.</p></li>
-      <li><span class="step__num">02</span><h3>Projektering</h3><p>Vi tar fram rätt lösning med våra specialister.</p></li>
-      <li><span class="step__num">03</span><h3>Genomförande</h3><p>Vi bygger med fokus på kvalitet, säkerhet och hållbarhet.</p></li>
-      <li><span class="step__num">04</span><h3>Överlämning</h3><p>Vi levererar och följer upp för långsiktig funktion.</p></li>
+      <li><span>1</span><h3>Möte och platsbesök</h3><p>Vi går igenom behov, budget och tidplan. Ni får en första kostnadsbedömning inom två veckor.</p></li>
+      <li><span>2</span><h3>Projektering</h3><p>Arkitekt och konstruktörer tar fram handlingar. Ni godkänner innan vi lämnar ett fast pris.</p></li>
+      <li><span>3</span><h3>Byggtid</h3><p>Byggmöte varannan vecka. Ni ser tidplan och ekonomi i realtid i vår projektportal.</p></li>
+      <li><span>4</span><h3>Överlämning</h3><p>Slutbesiktning, drift­instruktioner och två års garantiuppföljning ingår alltid.</p></li>
     </ol>
   </div>
 </section>
 
-<!-- Kundcitat -->
-<section class="section section--tight">
-  <div class="container">
-    <div class="section-head">
-      <h2 class="h-line">Det säger våra kunder</h2>
-      <a href="#" class="link">Se fler kundcase <svg><use href="#i-arrow"/></svg></a>
-    </div>
-    <div class="grid-3">
-      <figure class="quote">
-        <div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
-        <blockquote>”Strandmark Gruppen levererade med hög kvalitet, stort engagemang och en imponerande förmåga att lösa utmaningar längs vägen.”</blockquote>
-        <figcaption><img src="https://images.pexels.com/photos/30004322/pexels-photo-30004322.jpeg?auto=compress&cs=tinysrgb&w=120&h=120&fit=crop" alt=""><div><b>Anna Karlsson</b><small>Projektchef, Vasakronan</small></div></figcaption>
-      </figure>
-      <figure class="quote">
-        <div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
-        <blockquote>”Ett professionellt team med bred kompetens och tydlig kommunikation genom hela projektet. Vi kände oss trygga från start till mål.”</blockquote>
-        <figcaption><img src="https://images.pexels.com/photos/34461415/pexels-photo-34461415.jpeg?auto=compress&cs=tinysrgb&w=120&h=120&fit=crop" alt=""><div><b>Johan Eriksson</b><small>Fastighetsutvecklingschef, Castellum</small></div></figcaption>
-      </figure>
-      <figure class="quote">
-        <div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
-        <blockquote>”Strandmark Gruppen är en långsiktig partner som förstår både våra affärsmål och vikten av hållbara lösningar.”</blockquote>
-        <figcaption><img src="https://images.pexels.com/photos/34381970/pexels-photo-34381970.jpeg?auto=compress&cs=tinysrgb&w=120&h=120&fit=crop" alt=""><div><b>Maria Lindgren</b><small>VD, Göteborgs Stads Lokalförvaltning</small></div></figcaption>
-      </figure>
-    </div>
+<section class="section">
+  <div class="container testimonial">
+    <blockquote>
+      <p>”Vi hade full undervisning i etapp ett under hela bygget av etapp två. Det gick för att Strandmark planerade schakt och leveranser runt skolans scheman, inte tvärtom.”</p>
+      <footer><b>Lena Holm</b>, rektor, Campus Västra</footer>
+    </blockquote>
   </div>
 </section>
 
-<!-- FAQ -->
-<section class="section section--tight faq-section">
-  <div class="container">
-    <div class="section-head">
-      <h2 class="h-line">Vanliga frågor</h2>
-      <a href="#" class="link">Se alla frågor <svg><use href="#i-arrow"/></svg></a>
-    </div>
+<section class="section section--alt">
+  <div class="container faq-wrap">
+    <h2>Vanliga frågor</h2>
     <div class="faq">
-      <details><summary>Arbetar ni med totalentreprenad?<svg><use href="#i-chev"/></svg></summary><p>Ja. Vi tar helhetsansvar för projektering och genomförande, med en kontaktperson genom hela projektet.</p></details>
-      <details><summary>Hur ser processen ut?<svg><use href="#i-chev"/></svg></summary><p>Analys, projektering, genomförande och överlämning – med tydliga avstämningar i varje steg.</p></details>
-      <details><summary>Vilka geografiska områden täcker ni?<svg><use href="#i-chev"/></svg></summary><p>Vi är verksamma i hela Sverige genom våra bolag och lokala team.</p></details>
-      <details><summary>Arbetar ni med hållbarhetsmål?<svg><use href="#i-chev"/></svg></summary><p>Ja, vi arbetar aktivt med energieffektiva lösningar, materialval och certifieringar.</p></details>
-      <details><summary>Kan ni hjälpa till tidigt i projektet?<svg><use href="#i-chev"/></svg></summary><p>Absolut. Ju tidigare vi kommer in, desto mer värde kan vi skapa i planering och kalkyl.</p></details>
-      <details><summary>Hur snabbt kan vi få offert?<svg><use href="#i-chev"/></svg></summary><p>Normalt inom 5–10 arbetsdagar beroende på projektets omfattning.</p></details>
+      <details><summary>Tar ni mindre uppdrag?<svg><use href="#i-plus"/></svg></summary><p>Ja. Ungefär en tredjedel av våra uppdrag är under 2 miljoner kronor, till exempel ombyggnad av lokaler, laddplatser eller markarbeten.</p></details>
+      <details><summary>Var i landet arbetar ni?<svg><use href="#i-plus"/></svg></summary><p>Vi har kontor i Malmö, Göteborg, Jönköping, Linköping, Stockholm, Västerås, Gävle, Sundsvall och Umeå. Större projekt tar vi även utanför de regionerna.</p></details>
+      <details><summary>Hur snabbt får vi en offert?<svg><use href="#i-plus"/></svg></summary><p>En första kostnadsbedömning inom två veckor. En fast offert kräver handlingar, och tar normalt fyra till sex veckor.</p></details>
+      <details><summary>Arbetar ni med miljöcertifiering?<svg><use href="#i-plus"/></svg></summary><p>Vi är certifierade enligt ISO 14001 och har byggt enligt Miljöbyggnad Silver och Guld samt Svanen.</p></details>
+      <details><summary>Kan vi bara anlita fastighetsbolaget?<svg><use href="#i-plus"/></svg></summary><p>Ja, Strandmark Fastighet tar uppdrag även för byggnader vi inte har byggt själva.</p></details>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="cta" id="kontakt">
-  <img class="cta__bg" src="https://images.pexels.com/photos/8961065/pexels-photo-8961065.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="">
-  <div class="container cta__inner">
-    <p class="eyebrow eyebrow--light"><span class="rule rule--inline"></span>Låt oss bygga nästa projekt tillsammans</p>
-    <h2>Behöver du en partner med både bredd och spets?</h2>
-    <p>Vi hjälper dig att förverkliga dina projekt – från tidig idé till färdig leverans och långsiktig förvaltning.</p>
-    <div class="btn-row">
-      <a href="mailto:info@strandmarkgruppen.se" class="btn btn--gold">Kontakta oss <svg><use href="#i-arrow"/></svg></a>
-      <a href="#" class="btn btn--ghost">Boka möte</a>
+<section class="contact" id="kontakt">
+  <div class="container contact__inner">
+    <div>
+      <h2>Har ni ett projekt på gång?</h2>
+      <p>Ring eller mejla Erik direkt. Han svarar samma dag och kopplar in rätt bolag.</p>
+    </div>
+    <div class="contact__person">
+      <b>Erik Sandberg</b>
+      <span>Affärschef</span>
+      <a href="tel:0101234560">010-123 45 60</a>
+      <a href="mailto:erik.sandberg@strandmarkgruppen.se">erik.sandberg@strandmarkgruppen.se</a>
     </div>
   </div>
 </section>
 
-<!-- Footer -->
 <footer class="footer">
   <div class="container footer__grid">
     <div>
@@ -301,31 +221,26 @@
         <svg class="brand__mark"><use href="#logo"/></svg>
         <span class="brand__text"><b>STRANDMARK</b><small>GRUPPEN</small></span>
       </a>
-      <p class="footer__about">Vi utvecklar, bygger och förvaltar hållbara miljöer i hela Sverige. Med bred kompetens, starka bolag och långsiktiga samarbeten skapar vi värde för nästa generation.</p>
-      <div class="social">
-        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 3h18v18H3zm4.3 7.3H5V18h2.3zM6.1 6.3a1.3 1.3 0 100 2.7 1.3 1.3 0 000-2.7zM19 13.4c0-2.2-1.2-3.3-2.9-3.3a2.5 2.5 0 00-2.3 1.3v-1.1h-2.3V18h2.3v-4c0-1 .3-1.9 1.4-1.9s1.5.9 1.5 2V18H19z"/></svg></a>
-        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></g><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
-        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M22 8.2a3 3 0 00-2.1-2.1C18 5.6 12 5.6 12 5.6s-6 0-7.9.5A3 3 0 002 8.2 31 31 0 001.6 12a31 31 0 00.4 3.8 3 3 0 002.1 2.1c1.9.5 7.9.5 7.9.5s6 0 7.9-.5a3 3 0 002.1-2.1 31 31 0 00.4-3.8 31 31 0 00-.4-3.8zM10 15.1V8.9l5.2 3.1z"/></svg></a>
-      </div>
+      <p class="footer__about">Strandmark Gruppen AB<br>Org.nr 556000-0000</p>
     </div>
     <div class="footer__col">
-      <h4>Affärsområden</h4>
-      <a href="#">Byggentreprenad</a><a href="#">Mark &amp; anläggning</a><a href="#">El &amp; teknik</a><a href="#">Fastighet &amp; service</a>
+      <h4>Bolagen</h4>
+      <a href="#">Strandmark Bygg</a><a href="#">Strandmark Mark</a><a href="#">Strandmark El</a><a href="#">Strandmark Fastighet</a>
     </div>
     <div class="footer__col">
-      <h4>Snabblänkar</h4>
-      <a href="#">Om oss</a><a href="#">Våra bolag</a><a href="#">Projekt</a><a href="#">Hållbarhet</a><a href="#">Karriär</a><a href="#">Kontakt</a>
+      <h4>Sidor</h4>
+      <a href="#">Om oss</a><a href="#">Projekt</a><a href="#">Miljö</a><a href="#">Jobba hos oss</a><a href="#">Press</a>
     </div>
-    <div class="footer__col footer__contact">
-      <h4>Kontakt</h4>
-      <a href="tel:010123456"><svg><use href="#i-phone"/></svg>010-123 45 67</a>
-      <a href="mailto:info@strandmarkgruppen.se"><svg><use href="#i-mail"/></svg>info@strandmarkgruppen.se</a>
-      <span><svg><use href="#i-pin"/></svg>Vasagatan 12<br>111 20 Stockholm</span>
+    <div class="footer__col">
+      <h4>Huvudkontor</h4>
+      <span>Vasagatan 12<br>111 20 Stockholm</span>
+      <a href="tel:010123456">010-123 45 67</a>
+      <a href="mailto:info@strandmarkgruppen.se">info@strandmarkgruppen.se</a>
     </div>
   </div>
   <div class="container footer__bottom">
-    <span>© 2024 Strandmark Gruppen. Alla rättigheter förbehålls.</span>
-    <span class="footer__legal"><a href="#">Integritetspolicy</a><a href="#">Cookies</a><a href="#">Villkor</a></span>
+    <span>© 2024 Strandmark Gruppen AB</span>
+    <span class="footer__legal"><a href="#">Integritetspolicy</a><a href="#">Cookies</a><a href="#">LinkedIn</a></span>
   </div>
 </footer>
 
