@@ -45,3 +45,10 @@ if (canTilt) {
     hero.style.setProperty('--py', 0);
   });
 }
+
+// Hero video: respect reduced motion
+const heroVideo = document.querySelector('.hero__bg');
+if (heroVideo && matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  heroVideo.removeAttribute('autoplay');
+  heroVideo.pause();
+}
