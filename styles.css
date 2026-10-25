@@ -216,7 +216,7 @@ button { font: inherit; background: none; border: 0; cursor: pointer; color: inh
 .features { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 16px; }
 .feature {
   position: relative;
-  min-height: 245px;
+  min-height: 360px;
   border-radius: var(--radius);
   overflow: hidden;
   color: #fff;
@@ -230,13 +230,14 @@ button { font: inherit; background: none; border: 0; cursor: pointer; color: inh
 .feature__shade--dark { background: linear-gradient(90deg, rgba(27,36,48,.96) 0%, rgba(27,36,48,.85) 45%, rgba(27,36,48,.1) 80%); }
 .feature--dark > img { object-position: 85% 30%; left: 30%; width: 70%; }
 .feature--dark { background: var(--navy); }
-.feature__content { position: relative; z-index: 1; padding: 24px 50px; max-width: 560px; }
-.feature__content .eyebrow { font-size: 11px; margin-bottom: 12px; }
-.feature h2 { font-family: var(--head); font-weight: 700; font-size: 31px; line-height: 1.13; margin-bottom: 12px; }
-.feature p { font-size: 14px; line-height: 1.5; color: rgba(255,255,255,.9); margin-bottom: 16px; }
+.feature__content { position: relative; z-index: 1; padding: 44px 56px; max-width: 620px; }
+.feature__content .eyebrow { font-size: 12px; margin-bottom: 14px; }
+.feature h2 { font-family: var(--head); font-weight: 700; font-size: 38px; line-height: 1.1; margin-bottom: 14px; }
+.feature p { font-size: 15.5px; line-height: 1.55; color: rgba(255,255,255,.9); margin-bottom: 22px; }
+.feature .btn--sm { font-size: 14.5px; padding: 11px 24px; }
 
 /* ---------- career ---------- */
-.career { max-width: 1340px; margin: 12px auto 0; padding: 0 40px 12px; }
+.career { max-width: 1340px; margin: 28px auto 0; padding: 0 40px 12px; }
 .career__inner { display: grid; grid-template-columns: 1.13fr 1.05fr .6fr; gap: 28px; align-items: center; }
 .career__img { width: 100%; height: 170px; object-fit: cover; border-radius: var(--radius); object-position: 50% 78%; }
 .career__text .eyebrow { font-size: 10.5px; margin-bottom: 4px; }
