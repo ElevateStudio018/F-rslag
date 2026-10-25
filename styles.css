@@ -331,11 +331,118 @@ button { font: inherit; background: none; border: 0; cursor: pointer; color: inh
 }
 
 /* ---------- responsive ---------- */
-@media (max-width: 1200px) {
-  .nav { margin-left: 60px; gap: 28px; }
-  .hero__title { font-size: 64px; }
-  .footer__grid { grid-template-columns: repeat(3, 1fr); }
+/* ---------- desktop: proportional to the mockup ----------
+   The mockup page is 1026 units wide. 1u scales with the viewport so every
+   section keeps the mockup's proportions; small text never drops below a
+   readable minimum. Tablet and mobile keep the fixed-size rules above. */
+@media (min-width: 1001px) {
+  :root { --u: calc(min(100vw, 1760px) / 1026); }
+
+  .container { max-width: calc(1026 * var(--u)); padding: 0 calc(52 * var(--u)); }
+  .eyebrow { font-size: max(11px, calc(7 * var(--u))); margin-bottom: calc(5 * var(--u)); }
+  .h2 { font-size: calc(20 * var(--u)); line-height: 1.15; }
+  .h2--sm { font-size: calc(16.5 * var(--u)); }
+  .btn { font-size: max(12px, calc(7.5 * var(--u))); padding: calc(8 * var(--u)) calc(17 * var(--u)); gap: calc(6 * var(--u)); border-width: max(1.5px, calc(1.2 * var(--u))); }
+  .btn--sm { font-size: max(12px, calc(7 * var(--u))); padding: calc(6.5 * var(--u)) calc(14 * var(--u)); }
+  .link { font-size: max(12px, calc(7 * var(--u))); gap: calc(5 * var(--u)); }
+  .circle-btn { font-size: max(15px, calc(10 * var(--u))); }
+  .bar { width: calc(20 * var(--u)); height: max(2px, calc(1.4 * var(--u))); }
+
+  /* header: 37u */
+  .header__inner { height: max(60px, calc(37 * var(--u))); padding: 0 calc(52 * var(--u)); max-width: calc(1026 * var(--u)); margin: 0 auto; }
+  .logo { font-size: calc(13 * var(--u)); gap: calc(6 * var(--u)); }
+  .logo__mark { width: calc(18 * var(--u)); height: calc(18 * var(--u)); }
+  .nav { margin-left: calc(86 * var(--u)); gap: calc(26 * var(--u)); }
+  .nav a { font-size: max(13px, calc(7.5 * var(--u))); }
+  .header__actions { gap: calc(18 * var(--u)); }
+  .icon-btn svg { width: calc(10 * var(--u)); height: calc(10 * var(--u)); min-width: 16px; min-height: 16px; }
+
+  /* hero: full screen (as requested), content scaled like the mockup */
+  .hero { min-height: calc(100svh - max(60px, calc(37 * var(--u)))); }
+  .hero__inner { padding-top: calc(30 * var(--u)); padding-bottom: calc(30 * var(--u)); }
+  .hero__content { max-width: calc(300 * var(--u)); }
+  .hero__content .eyebrow { font-size: max(11px, calc(7 * var(--u))); letter-spacing: .32em; margin-bottom: calc(12 * var(--u)); }
+  .hero__title { font-size: calc(46 * var(--u)); line-height: .95; margin-bottom: calc(14 * var(--u)); }
+  .hero__lead { font-size: max(14px, calc(9.5 * var(--u))); max-width: calc(290 * var(--u)); margin-bottom: calc(17 * var(--u)); }
+  .hero__buttons { gap: calc(13 * var(--u)); }
+  .hero__buttons .btn { padding: calc(8.5 * var(--u)) calc(18 * var(--u)); }
+  .hero__badge { width: calc(132 * var(--u)); padding: calc(13 * var(--u)) calc(14 * var(--u)) calc(12 * var(--u)); }
+  .hero__badge p { font-size: max(10px, calc(6.5 * var(--u))); margin-bottom: calc(10 * var(--u)); }
+
+  /* stats: 50u */
+  .stat { padding: calc(10 * var(--u)) calc(6 * var(--u)); gap: calc(12 * var(--u)); }
+  .stat svg { width: calc(24 * var(--u)); height: calc(24 * var(--u)); }
+  .stat strong { font-size: calc(17 * var(--u)); }
+  .stat span { font-size: max(11px, calc(7 * var(--u))); }
+
+  /* services */
+  .services { padding: calc(20 * var(--u)) 0 calc(11 * var(--u)); }
+  .section-head--split { gap: calc(30 * var(--u)); margin-bottom: calc(12 * var(--u)); }
+  .section-head__aside p { font-size: max(12px, calc(8 * var(--u))); max-width: calc(300 * var(--u)); }
+  .section-head--row { margin-bottom: calc(10 * var(--u)); }
+  .service-grid { gap: calc(10 * var(--u)); }
+  .service-card img { aspect-ratio: auto; height: calc(91 * var(--u)); }
+  .service-card__body { gap: calc(10 * var(--u)); padding: calc(12 * var(--u)) calc(12 * var(--u)) calc(14 * var(--u)); }
+  .service-card__icon { width: calc(18 * var(--u)); height: calc(18 * var(--u)); }
+  .service-card h3 { font-size: calc(9.5 * var(--u)); margin-bottom: calc(5 * var(--u)); }
+  .service-card p { font-size: max(12px, calc(7 * var(--u))); line-height: 1.6; }
+
+  /* projects: full screen (as requested), cards keep the mockup's type scale */
+  .projects { margin-top: 0; padding: calc(24 * var(--u)) 0; }
+  .projects .eyebrow { font-size: max(11px, calc(7 * var(--u))); }
+  .projects .h2 { font-size: calc(16.5 * var(--u)); }
+  .projects .section-head--row { margin-bottom: calc(10 * var(--u)); }
+  .project-grid { gap: calc(10 * var(--u)); }
+  .project-card img { height: clamp(calc(99 * var(--u)), calc(100svh - 150 * var(--u)), calc(330 * var(--u))); }
+  .project-card__body { padding: calc(9 * var(--u)) calc(14 * var(--u)) calc(11 * var(--u)); gap: calc(10 * var(--u)); }
+  .project-card .tag, .tag { font-size: max(10px, calc(5.8 * var(--u))); margin-bottom: calc(3 * var(--u)); }
+  .project-card h3 { font-size: calc(9.5 * var(--u)); }
+  .project-card p:not(.tag) { font-size: max(12px, calc(7.5 * var(--u))); }
+  .project-card .circle-btn { font-size: max(15px, calc(10 * var(--u))); }
+
+  /* hållbarhet + om oss: wider than the container, slightly taller than the mockup */
+  .container--wide { max-width: calc(1026 * var(--u)); padding: 0 calc(27 * var(--u)); }
+  .features { gap: calc(10 * var(--u)); margin-top: calc(8 * var(--u)); }
+  .feature { min-height: calc(200 * var(--u)); }
+  .feature__content { padding: calc(26 * var(--u)) calc(38 * var(--u)); max-width: calc(330 * var(--u)); }
+  .feature__content .eyebrow { font-size: max(10px, calc(6.5 * var(--u))); margin-bottom: calc(8 * var(--u)); }
+  .feature h2 { font-size: calc(20 * var(--u)); line-height: 1.15; margin-bottom: calc(8 * var(--u)); }
+  .feature p { font-size: max(12px, calc(8 * var(--u))); margin-bottom: calc(12 * var(--u)); }
+  .feature .btn--sm { font-size: max(12px, calc(7 * var(--u))); padding: calc(6.5 * var(--u)) calc(14 * var(--u)); }
+
+  /* career */
+  .career { max-width: calc(1026 * var(--u)); margin-top: calc(10 * var(--u)); padding: 0 calc(28 * var(--u)) calc(10 * var(--u)); }
+  .career__inner { grid-template-columns: 387fr 300fr 218fr; gap: calc(22 * var(--u)); }
+  .career__img { height: calc(122 * var(--u)); }
+  .career__text .eyebrow { font-size: max(10px, calc(6 * var(--u))); margin-bottom: calc(4 * var(--u)); }
+  .career__text .h2 { font-size: calc(16 * var(--u)); margin-bottom: calc(8 * var(--u)); }
+  .career__text p { font-size: max(12px, calc(7.8 * var(--u))); max-width: none; margin-bottom: calc(12 * var(--u)); }
+  .career__list { padding: calc(14 * var(--u)) calc(16 * var(--u)); gap: calc(14 * var(--u)); }
+  .career__list li { font-size: max(12px, calc(7.5 * var(--u))); gap: calc(18 * var(--u)); }
+  .career__list svg { width: calc(16 * var(--u)); height: calc(16 * var(--u)); }
+
+  /* CTA: 63u */
+  .cta__inner { gap: calc(26 * var(--u)); padding-top: calc(16 * var(--u)); padding-bottom: calc(17 * var(--u)); }
+  .cta__label .eyebrow { font-size: max(10px, calc(6.5 * var(--u))); }
+  .cta__label .bar { width: calc(46 * var(--u)); }
+  .cta__text h2 { font-size: calc(16 * var(--u)); }
+  .cta__text p { font-size: max(12px, calc(8.5 * var(--u))); }
+
+  /* footer */
+  .footer { padding-top: calc(14 * var(--u)); }
+  .footer__grid { gap: calc(18 * var(--u)); padding-bottom: calc(12 * var(--u)); grid-template-columns: 210fr 122fr 116fr 120fr 160fr auto; }
+  .logo--lg { font-size: calc(13 * var(--u)); margin-bottom: calc(6 * var(--u)); }
+  .footer__brand p { font-size: max(12px, calc(7.5 * var(--u))); }
+  .footer__col h4 { font-size: max(12px, calc(7 * var(--u))); }
+  .footer__col a, .footer__col p { font-size: max(12px, calc(7.2 * var(--u))); }
+  .footer__contact svg { width: calc(7 * var(--u)); height: calc(7 * var(--u)); min-width: 11px; min-height: 11px; }
+  .socials { gap: calc(14 * var(--u)); }
+  .socials svg { width: calc(10 * var(--u)); height: calc(10 * var(--u)); min-width: 15px; min-height: 15px; }
+  .footer__social { gap: calc(30 * var(--u)); }
+  .lang { font-size: max(11px, calc(6.5 * var(--u))); }
+  .footer__bottom { padding-top: calc(8 * var(--u)); padding-bottom: calc(10 * var(--u)); font-size: max(11px, calc(6.5 * var(--u))); }
 }
+
 @media (max-width: 1000px) {
   .container, .header__inner { padding: 0 32px; }
   .menu-toggle { display: flex; }
