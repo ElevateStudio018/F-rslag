@@ -22,19 +22,21 @@
       </svg>
       <span>NORDBYGG</span>
     </a>
-    <nav class="nav" aria-label="Huvudmeny">
+    <nav class="nav" id="nav" aria-label="Huvudmeny">
       <a href="#tjanster">Våra tjänster</a>
       <a href="#projekt">Projekt</a>
       <a href="#hallbarhet">Hållbarhet</a>
       <a href="#om">Om oss</a>
       <a href="#karriar">Karriär</a>
       <a href="#">Nyheter</a>
+      <a href="#kontakt" class="btn btn--primary nav__cta">Kontakta oss <span class="arrow">→</span></a>
     </nav>
     <div class="header__actions">
       <button class="icon-btn" aria-label="Sök">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
       </button>
-      <a href="#kontakt" class="btn btn--primary btn--sm">Kontakta oss <span class="arrow">→</span></a>
+      <a href="#kontakt" class="btn btn--primary btn--sm header__cta">Kontakta oss <span class="arrow">→</span></a>
+      <button class="menu-toggle" aria-label="Öppna meny" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
@@ -97,7 +99,7 @@
     </div>
 
     <div class="service-grid">
-      <article class="service-card">
+      <article class="service-card" data-tilt="8">
         <img src="https://images.pexels.com/photos/5505119/pexels-photo-5505119.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Byggarbetsplats med lyftkranar">
         <div class="service-card__body">
           <svg class="service-card__icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 29V8l10-4v25M14 29V11l13 4v14M2 29h28"/><path d="M8 12h2M8 16h2M8 20h2M8 24h2M18 17h5M18 21h5M18 25h5"/></svg>
@@ -108,7 +110,7 @@
           <a href="#" class="circle-btn" aria-label="Läs mer om byggentreprenad">→</a>
         </div>
       </article>
-      <article class="service-card">
+      <article class="service-card" data-tilt="8">
         <img src="https://images.pexels.com/photos/8961064/pexels-photo-8961064.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Projektledare på byggarbetsplats">
         <div class="service-card__body">
           <svg class="service-card__icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="10" r="5"/><path d="M3 28c0-5.5 4-9 9-9s9 3.5 9 9"/><circle cx="23" cy="12" r="3.5"/><path d="M22 19.5c4 0 7 2.8 7 7"/></svg>
@@ -119,7 +121,7 @@
           <a href="#" class="circle-btn" aria-label="Läs mer om projektledning">→</a>
         </div>
       </article>
-      <article class="service-card">
+      <article class="service-card" data-tilt="8">
         <img src="https://images.pexels.com/photos/773843/pexels-photo-773843.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Bro över vatten">
         <div class="service-card__body">
           <svg class="service-card__icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M10 4 4 28M22 4l6 24M16 5v4M16 13v5M16 22v6"/></svg>
@@ -130,7 +132,7 @@
           <a href="#" class="circle-btn" aria-label="Läs mer om anläggning">→</a>
         </div>
       </article>
-      <article class="service-card">
+      <article class="service-card" data-tilt="8">
         <img src="https://images.pexels.com/photos/18821302/pexels-photo-18821302.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Moderna flerbostadshus">
         <div class="service-card__body">
           <svg class="service-card__icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 29V5h14v24M20 13h7v16M3 29h26"/><path d="M10 9h2M14 9h2M10 14h2M14 14h2M10 19h2M14 19h2M11 29v-5h4v5M23 18h1M23 23h1"/></svg>
@@ -157,7 +159,7 @@
     </div>
 
     <div class="project-grid">
-      <article class="project-card">
+      <article class="project-card" data-tilt="6">
         <img src="https://images.pexels.com/photos/3030468/pexels-photo-3030468.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Stockholms vattenfront i solnedgång">
         <div class="project-card__body">
           <div>
@@ -168,7 +170,7 @@
           <a href="#" class="circle-btn" aria-label="Läs mer om Skeppsbron">→</a>
         </div>
       </article>
-      <article class="project-card">
+      <article class="project-card" data-tilt="6">
         <img src="https://images.pexels.com/photos/3009663/pexels-photo-3009663.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Upplyst bro i skymning">
         <div class="project-card__body">
           <div>
@@ -179,7 +181,7 @@
           <a href="#" class="circle-btn" aria-label="Läs mer om Västlänken">→</a>
         </div>
       </article>
-      <article class="project-card">
+      <article class="project-card" data-tilt="6">
         <img src="https://images.pexels.com/photos/33230969/pexels-photo-33230969.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Modern byggnad">
         <div class="project-card__body">
           <div>
@@ -196,7 +198,7 @@
 
 <!-- ============ FEATURE PANELS ============ -->
 <section class="features container--wide">
-  <article class="feature" id="hallbarhet">
+  <article class="feature" id="hallbarhet" data-tilt="4">
     <img src="https://images.pexels.com/photos/260259/pexels-photo-260259.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Skog och sjö sett från ovan">
     <div class="feature__shade feature__shade--left"></div>
     <div class="feature__content">
@@ -206,7 +208,7 @@
       <a href="#" class="btn btn--white btn--sm">Läs mer om vårt hållbarhetsarbete <span class="arrow">→</span></a>
     </div>
   </article>
-  <article class="feature feature--dark" id="om">
+  <article class="feature feature--dark" id="om" data-tilt="4">
     <img src="https://images.pexels.com/photos/35390341/pexels-photo-35390341.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Byggarbetare med skyddshjälm">
     <div class="feature__shade feature__shade--dark"></div>
     <div class="feature__content">
@@ -302,10 +304,11 @@
     </div>
   </div>
   <div class="container footer__bottom">
-    <p>© 2024 Nordbygg AB <span>|</span> <a href="#">Integritetspolicy</a> <span>|</span> <a href="#">Cookies</a> <span>|</span> <a href="#">Tillgänglighet</a></p>
+    <p class="footer__legal"><span>© 2024 Nordbygg AB</span><a href="#">Integritetspolicy</a><a href="#">Cookies</a><a href="#">Tillgänglighet</a></p>
     <p class="footer__slogan">Vi bygger ett starkare Sverige. <span class="bar"></span></p>
   </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
